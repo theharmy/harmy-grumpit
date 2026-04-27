@@ -44,46 +44,88 @@
         };
 
         combo_q {
-            bindings = <&kp DE_Q>;
             key-positions = <0 1>;
+            bindings = <&kp DE_Q>;
             layers = <0>;
         };
 
         combo_k {
-            bindings = <&kp DE_K>;
             key-positions = <1 2>;
+            bindings = <&kp DE_K>;
             layers = <0>;
         };
 
         combo_p {
-            bindings = <&kp DE_P>;
             key-positions = <4 3>;
+            bindings = <&kp DE_P>;
             layers = <0>;
         };
 
         combo_plus {
-            bindings = <&kp DE_PLUS>;
             key-positions = <4 3>;
+            bindings = <&kp DE_PLUS>;
             layers = <2>;
         };
 
         combo_colon {
-            bindings = <&kp DE_COLON>;
             key-positions = <1 2>;
+            bindings = <&kp DE_COLON>;
             layers = <2>;
         };
 
         combo_perc {
-            bindings = <&kp DE_PERCENT>;
             key-positions = <1 0>;
+            bindings = <&kp DE_PERCENT>;
             layers = <2>;
         };
 
         combo_ampe {
-            bindings = <&kp DE_AMPERSAND>;
             key-positions = <4 5>;
+            bindings = <&kp DE_AMPERSAND>;
             layers = <2>;
         };
+
+   		        combo_sqt {
+            timeout-ms = <50>;
+            key-positions = <22 23>;
+            bindings = <&kp SQT>;
+        };
+
+        combo_osb {
+            timeout-ms = <50>;
+            key-positions = <0 7>;
+            bindings = <&kp LBKT>;
+        };
+
+        combo_ocb {
+            timeout-ms = <50>;
+            key-positions = <1 8>;
+            bindings = <&kp LBRC>;
+        };
+
+        combo_opar {
+            timeout-ms = <50>;
+            key-positions = <2 9>;
+            bindings = <&kp LPAR>;
+        };
+
+        combo_cpar {
+            timeout-ms = <50>;
+            key-positions = <3 12>;
+            bindings = <&kp RPAR>;
+        };
+
+        combo_ccb {
+            timeout-ms = <50>;
+            key-positions = <4 13>;
+            bindings = <&kp RBRC>;
+        };
+
+        combo_csb {
+            timeout-ms = <50>;
+            key-positions = <5 14>;
+            bindings = <&kp RBKT>;
+        }; 
     };
 
     behaviors {
@@ -119,13 +161,13 @@
             >;
         };
 
-        sym_layer {
+       sym_layer {
             display-name = "Sym";
             bindings = <
-                    &kp DE_LESS_THAN   &kp EQUAL                &kp DE_PIPE                                     &kp DE_ASTRK       &kp DE_BACKSLASH  &kp DE_GREATER_THAN
-&kp DE_CARET        &kp DE_LEFT_BRACE  &kp DE_LEFT_PARENTHESIS  &kp DE_SEMICOLON  &kp DE_LBKT     &kp DE_RBKT   &kp DE_UNDERSCORE  &kp DE_RPAR       &kp DE_RIGHT_BRACE   &kp DE_COMMA
-&kp DE_EXCLAMATION  &kp QMARK          &kp DE_GRAVE             &kp DE_FSLH       &kp DE_TILDE    &kp DE_MINUS  &kp DE_DOLLAR      &kp DE_HASH       &kp DE_SQT           &kp DE_DQT
-                                                                                  &mo CFG_L       &none
+                            &kp FSLH    &kp EQUAL &kp BSLH                                  &kp PG_UP   &kp UP      &kp DEL
+                &kp AMPS    &kp EXCL    &kp PLUS  &kp UNDER  &kp TILDE           &kp HOME   &kp LEFT    &kp DOWN    &kp RIGHT   &kp END
+                &kp PIPE    &kp QMARK   &kp MINUS &kp ASTRK  &kp GRAVE           &none      &kp PG_DN   &none       &none       &none
+                                                             &mo CFG_L           &none 
             >;
         };
 
