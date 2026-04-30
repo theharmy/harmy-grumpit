@@ -145,8 +145,8 @@
             display-name = "Default Layer";
             bindings = <
                 &kp DE_L           &kp DE_D           &kp DE_Z                                            &kp DE_W             &kp DE_O           &kp DE_U
-&hm LCTRL DE_R  &hm LEFT_ALT DE_N  &hm LEFT_GUI DE_T  &hm LEFT_SHIFT DE_H  &kp DE_F      &kp DE_Y         &hm LEFT_SHIFT DE_C  &hm LEFT_GUI DE_E  &hm LEFT_ALT DE_I  &hm LCTRL DE_A
-&kp DE_X        &kp DE_J           &kp DE_M           &kp DE_B             &kp DE_V      &kp DE_MINUS     &kp DE_G             &kp DE_SLASH       &kp DE_COMMA       &kp DE_DOT
+&hm LCTRL DE_R  &hm LEFT_ALT DE_N  &hm LEFT_GUI DE_T  &hm LEFT_SHIFT DE_H  &kp DE_K      &kp DE_P         &hm LEFT_SHIFT DE_C  &hm LEFT_GUI DE_E  &hm LEFT_ALT DE_I  &hm LCTRL DE_A
+&kp DE_X        &kp DE_J           &kp DE_M           &kp DE_B             &kp DE_F      &kp DE_Y         &kp DE_G             &kp DE_SLASH       &kp DE_COMMA       &kp DE_SQT
                                                                            &lt 1 DE_S    &lt SYM_L SPACE
             >;
         };
