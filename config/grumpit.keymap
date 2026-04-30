@@ -18,21 +18,21 @@
 
         combo_tab {
             timeout-ms = <50>;
-            key-positions = <2 9>;
+            key-positions = <9 2>;
             bindings = <&kp TAB>;
             layers = <0>;
         };
 
         combo_bspc {
             timeout-ms = <50>;
-            key-positions = <5 14>;
+            key-positions = <14 5>;
             bindings = <&kp BSPC>;
             layers = <0>;
         };
 
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <1 8>;
+            key-positions = <8 7 9>;
             bindings = <&kp ESC>;
             layers = <0>;
         };
@@ -55,21 +55,15 @@
             layers = <0>;
         };
 
-        combo_colon {
-            key-positions = <1 2>;
-            bindings = <&kp DE_COLON>;
-            layers = <2>;
-        };
-
         combo_dqt {
-            key-positions = <15 25>;
+            key-positions = <3 4>;
             bindings = <&kp DE_DQT>;
             layers = <2>;
         };
 
         combo_sqt {
             timeout-ms = <50>;
-            key-positions = <25 15>;
+            key-positions = <3 4>;
             bindings = <&kp SQT>;
             layers = <0>;
         };
@@ -112,34 +106,39 @@
 
         combo_flsh {
             bindings = <&kp DE_SLASH>;
-            key-positions = <23 22>;
+            key-positions = <23 24>;
             layers = <0>;
         };
 
         combo_bslsh {
             bindings = <&kp DE_BACKSLASH>;
-            key-positions = <23 24>;
+            key-positions = <23 22>;
             layers = <0>;
         };
 
-        combo_space {
-            bindings = <&kp DE_SPACE>;
-            key-positions = <3 12>;
-            timeout-ms = <50>;
+        combo_semi {
+            bindings = <&kp DE_SEMI>;
+            key-positions = <23 24 22>;
             layers = <0>;
         };
 
         combo_enter {
             bindings = <&kp ENTER>;
-            key-positions = <4 13>;
+            key-positions = <12 13 14>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
-        combo_colon {
-            bindings = <&kp DE_SEMI>;
-            key-positions = <23 24 22>;
+        combo_grave {
+            bindings = <&kp DE_GRAVE>;
+            key-positions = <4 5>;
+            timeout-ms = <50>;
             layers = <0>;
+        };
+
+        combo_caps_word {
+            bindings = <&caps_word>;
+            key-positions = <9 12>;
         };
     };
 
