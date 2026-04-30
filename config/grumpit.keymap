@@ -58,7 +58,6 @@
         combo_dqt {
             key-positions = <3 4>;
             bindings = <&kp DE_DQT>;
-            layers = <2>;
         };
 
         combo_sqt {
@@ -158,30 +157,29 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-                &kp DE_L           &kp DE_D           &kp DE_Z                                            &kp DE_W             &kp DE_O           &kp DE_U
-&hm LCTRL DE_R  &hm LEFT_ALT DE_N  &hm LEFT_GUI DE_T  &hm LEFT_SHIFT DE_H  &kp DE_K      &kp DE_P         &hm LEFT_SHIFT DE_C  &hm LEFT_GUI DE_E  &hm LEFT_ALT DE_I  &hm LCTRL DE_A
-&kp DE_X        &kp DE_J           &kp DE_M           &kp DE_B             &kp DE_F      &kp DE_Y         &kp DE_G             &kp DE_COMMA       &kp DE_DOT         &kp DE_SQT
-                                                                           &lt 1 DE_S    &lt SYM_L SPACE
+                &kp DE_L           &kp DE_D           &kp DE_Z                                        &kp DE_W             &kp DE_O           &kp DE_U
+&hm LCTRL DE_R  &hm LEFT_ALT DE_N  &hm LEFT_GUI DE_T  &hm LEFT_SHIFT DE_H  &kp DE_K      &kp DE_P     &hm LEFT_SHIFT DE_C  &hm LEFT_GUI DE_E  &hm LEFT_ALT DE_I  &hm LCTRL DE_A
+&kp DE_X        &kp DE_J           &kp DE_M           &kp DE_B             &kp DE_F      &kp DE_Y     &kp DE_G             &kp DE_COMMA       &kp DE_DOT         &kp DE_SQT
+                                                                           &lt 1 DE_S    &lt 2 SPACE
             >;
         };
 
         num_layer {
             display-name = "Num";
             bindings = <
-        &kp F9  &kp F10  &kp F11                           &kp N7  &kp N8  &kp N9
-&kp F5  &kp F6  &kp F7   &kp F8   &kp F12    &kp DE_COMMA  &kp N4  &kp N5  &kp N6  &kp N0
-&kp F1  &kp F2  &kp F3   &kp F4   &none      &kp DE_N0     &kp N1  &kp N2  &kp N3  &kp DE_DOT
-                                  &none      &kp RET
+                    &kp DE_AT        &kp DE_HASH        &kp DE_DOLLAR                                     &kp N7  &kp N8  &kp N9
+&kp DE_PLUS         &kp DE_EQUAL     &kp DE_UNDERSCORE  &kp DE_MINUS      &kp DE_PERCENT    &kp DE_COMMA  &kp N4  &kp N5  &kp N6  &kp N0
+&kp DE_EXCLAMATION  &kp DE_QUESTION  &kp DE_ASTRK       &kp DE_AMPERSAND  &kp DE_CARET      &kp DE_N0     &kp N1  &kp N2  &kp N3  &kp DE_DOT
+                                                                          &none             &kp RET
             >;
         };
 
-        sym_layer {
-            display-name = "Sym";
+        nav {
             bindings = <
-          &kp FSLH   &kp EQUAL  &kp BSLH                          &kp PG_UP  &kp UP    &kp DEL
-&kp AMPS  &kp EXCL   &kp PLUS   &kp UNDER  &kp TILDE    &kp HOME  &kp LEFT   &kp DOWN  &kp RIGHT  &kp END
-&kp PIPE  &kp QMARK  &kp MINUS  &kp ASTRK  &kp GRAVE    &none     &kp PG_DN  &none     &none      &none
-                                           &trans       &kp RET
+              &kp LC(TAB)  &kp LC(LS(TAB))  &kp LC(F4)                      &kp PG_DN  &kp PG_UP  &trans
+&sk LCTRL     &sk LALT     &sk LGUI         &sk LSHFT   &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
+&kp LG(DE_Q)  &kp LA(TAB)  &kp LA(LS(TAB))  &trans      &trans    &kp HOME  &trans     &trans     &kp END    &trans
+                                                        &trans    &trans
             >;
         };
 
