@@ -58,6 +58,7 @@
         combo_dqt {
             key-positions = <3 4>;
             bindings = <&kp DE_DQT>;
+            layers = <1>;
         };
 
         combo_sqt {
@@ -129,7 +130,7 @@
             bindings = <&kp DE_GRAVE>;
             key-positions = <4 5>;
             timeout-ms = <50>;
-            layers = <0>;
+            layers = <1>;
         };
 
         combo_caps_word {
@@ -154,6 +155,30 @@
             key-positions = <8 18>;
             layers = <1>;
         };
+
+        combo_ue {
+            bindings = <&kp DE_U_UMLAUT>;
+            key-positions = <5 26>;
+            layers = <0>;
+        };
+
+        combo_ae {
+            bindings = <&kp DE_A_UMLAUT>;
+            key-positions = <26 15>;
+            layers = <0>;
+        };
+
+        combo_oe {
+            bindings = <&kp DE_O_UMLAUT>;
+            key-positions = <26 4>;
+            layers = <0>;
+        };
+
+        combo_sz {
+            bindings = <&kp DE_CAPITAL_SHARP_S>;
+            key-positions = <26 13>;
+            layers = <0>;
+        };
     };
 
     behaviors {
@@ -164,6 +189,15 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        layer_td: layer_td {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LAYER_TD";
+            #binding-cells = <0>;
+            bindings = <&mt LEFT_SHIFT SPACE>, <&mo 2>;
+
+            tapping-term-ms = <150>;
+        };
     };
 
     keymap {
@@ -172,10 +206,10 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-                &kp DE_L           &kp DE_D           &kp DE_Z                                                 &kp DE_W             &kp DE_O           &kp DE_U
-&hm LCTRL DE_R  &hm LEFT_ALT DE_N  &hm LEFT_GUI DE_T  &hm LEFT_SHIFT DE_H  &kp DE_K      &kp DE_P              &hm LEFT_SHIFT DE_C  &hm LEFT_GUI DE_E  &hm LEFT_ALT DE_I  &hm LCTRL DE_A
-&kp DE_X        &kp DE_J           &kp DE_M           &kp DE_B             &kp DE_F      &kp DE_Y              &kp DE_G             &kp DE_COMMA       &kp DE_DOT         &kp DE_SQT
-                                                                           &lt 1 DE_S    &mt LEFT_SHIFT SPACE
+                &kp DE_L           &kp DE_D           &kp DE_Z                                      &kp DE_W             &kp DE_O           &kp DE_U
+&hm LCTRL DE_R  &hm LEFT_ALT DE_N  &hm LEFT_GUI DE_T  &hm LEFT_SHIFT DE_H  &kp DE_K      &kp DE_P   &hm LEFT_SHIFT DE_C  &hm LEFT_GUI DE_E  &hm LEFT_ALT DE_I  &hm LCTRL DE_A
+&kp DE_X        &kp DE_J           &kp DE_M           &kp DE_B             &kp DE_F      &kp DE_Y   &kp DE_G             &kp DE_COMMA       &kp DE_DOT         &kp DE_SQT
+                                                                           &lt 1 DE_S    &layer_td
             >;
         };
 
