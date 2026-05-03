@@ -226,7 +226,7 @@
                     &kp DE_PERCENT   &kp DE_EQUAL  &kp DE_UNDER                                     &kp DE_ASTRK  &kp DE_PLUS   &kp DE_MINUS
 &kp N1              &kp N2           &kp N3        &kp N4            &kp N5          &kp N6         &kp N7        &kp N8        &kp N9        &kp N0
 &kp DE_EXCLAMATION  &kp DE_QUESTION  &kp DE_ASTRK  &kp DE_AMPERSAND  &kp DE_CARET    &kp DE_DOLLAR  &kp DE_HASH   &kp DE_GRAVE  &kp DE_COMMA  &kp DOT
-                                                                     &trans          &kp RET
+                                                                     &trans          &lt 2 ENTER
             >;
         };
 
