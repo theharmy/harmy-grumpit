@@ -186,6 +186,13 @@
             bindings = <&kp DE_COLON>;
             key-positions = <15 25>;
         };
+
+        combo_quit {
+            bindings = <&kp LG(DE_Q)>;
+            key-positions = <0 1 2>;
+            timeout-ms = <50>;
+            layers = <2>;
+        };
     };
 
     behaviors {
@@ -213,10 +220,10 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-                &kp DE_L           &kp DE_D           &kp DE_Z                                      &kp DE_W             &kp DE_O           &kp DE_U
-&hm LCTRL DE_R  &hm LEFT_ALT DE_N  &hm LEFT_GUI DE_T  &hm LEFT_SHIFT DE_H  &kp DE_K      &kp DE_P   &hm LEFT_SHIFT DE_C  &hm LEFT_GUI DE_E  &hm LEFT_ALT DE_I  &hm LCTRL DE_A
-&kp DE_X        &kp DE_J           &kp DE_M           &kp DE_B             &kp DE_F      &kp DE_Y   &kp DE_G             &kp DE_SLASH       &kp DE_COMMA       &kp DE_DOT
-                                                                           &lt 1 DE_S    &layer_td
+                &kp DE_L           &kp DE_D           &kp DE_Z                                                 &kp DE_W             &kp DE_O           &kp DE_U
+&hm LCTRL DE_R  &hm LEFT_ALT DE_N  &hm LEFT_GUI DE_T  &hm LEFT_SHIFT DE_H  &kp DE_K      &kp DE_P              &hm LEFT_SHIFT DE_C  &hm LEFT_GUI DE_E  &hm LEFT_ALT DE_I  &hm LCTRL DE_A
+&kp DE_X        &kp DE_J           &kp DE_M           &kp DE_B             &kp DE_F      &kp DE_Y              &kp DE_G             &kp DE_SLASH       &kp DE_COMMA       &kp DE_DOT
+                                                                           &lt 1 DE_S    &mt LEFT_SHIFT SPACE
             >;
         };
 
