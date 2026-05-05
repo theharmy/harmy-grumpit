@@ -17,24 +17,24 @@
         compatible = "zmk,combos";
 
         combo_tab {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             key-positions = <8 7>;
             bindings = <&kp TAB>;
             layers = <0 2>;
         };
 
         combo_bspc {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             key-positions = <14 13>;
             bindings = <&kp BSPC>;
             layers = <0 2>;
         };
 
         combo_esc {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             key-positions = <7 8 9>;
             bindings = <&kp ESC>;
-            layers = <0>;
+            layers = <0 2>;
         };
 
         combo_soff {
@@ -123,8 +123,8 @@
 
         combo_enter {
             bindings = <&kp ENTER>;
-            key-positions = <12 13 14>;
-            timeout-ms = <50>;
+            key-positions = <12 13>;
+            timeout-ms = <30>;
             layers = <0>;
         };
 
@@ -187,35 +187,32 @@
             key-positions = <15 25>;
         };
 
-        combo_quit {
-            bindings = <&kp LG(DE_Q)>;
-            key-positions = <0 1 2>;
-            timeout-ms = <50>;
-            layers = <2>;
-        };
-
         combo_space {
             bindings = <&kp SPACE>;
             key-positions = <8 9>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             layers = <0 2>;
         };
 
         combo_cspace {
             bindings = <&kp LC(BSPC)>;
-            key-positions = <13 12>;
-            timeout-ms = <50>;
+            key-positions = <13 12 14>;
+            timeout-ms = <30>;
             layers = <0 2>;
         };
 
         combo_repeat {
             bindings = <&key_repeat>;
             key-positions = <7 9>;
+            timeout-ms = <30>;
+            layers = <0>;
         };
 
         combo_repeat_r {
             bindings = <&key_repeat>;
             key-positions = <12 14>;
+            timeout-ms = <30>;
+            layers = <0>;
         };
     };
 
@@ -224,8 +221,10 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <180>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
+
+            require-prior-idle-ms = <100>;
         };
 
         layer_td: layer_td {
@@ -245,7 +244,7 @@
             display-name = "Default Layer";
             bindings = <
                 &kp DE_L           &kp DE_D           &kp DE_Z                                                 &kp DE_W             &kp DE_O           &kp DE_U
-&hm LCTRL DE_R  &hm LEFT_ALT DE_N  &hm LEFT_GUI DE_T  &hm LEFT_SHIFT DE_H  &kp DE_K      &kp DE_P              &hm LEFT_SHIFT DE_C  &hm LEFT_GUI DE_E  &hm LEFT_ALT DE_I  &hm LCTRL DE_A
+&mt LCTRL DE_R  &hm LEFT_ALT DE_N  &hm LEFT_GUI DE_T  &hm LEFT_SHIFT DE_H  &kp DE_K      &kp DE_P              &hm LEFT_SHIFT DE_C  &hm LEFT_GUI DE_E  &hm LEFT_ALT DE_I  &mt LCTRL DE_A
 &lt 2 DE_X      &kp DE_J           &kp DE_M           &kp DE_B             &kp DE_F      &kp DE_Y              &kp DE_G             &kp DE_SLASH       &kp DE_COMMA       &lt 2 DE_DOT
                                                                            &lt 1 DE_S    &mt LEFT_SHIFT SPACE
             >;
