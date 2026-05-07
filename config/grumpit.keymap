@@ -209,7 +209,7 @@
 
         combo_cspace {
             bindings = <&kp LC(BSPC)>;
-            key-positions = <13 12 14>;
+            key-positions = <13 12>;
             timeout-ms = <30>;
             layers = <0 2>;
         };
