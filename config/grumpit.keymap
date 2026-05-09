@@ -232,7 +232,12 @@
             bindings = <&kp DE_TILDE>;
             key-positions = <1 2>;
             timeout-ms = <30>;
-            layers = <2>;
+            layers = <1>;
+        };
+
+        combo_unlock {
+            bindings = <&studio_unlock>;
+            key-positions = <17 18 19>;
         };
     };
 
