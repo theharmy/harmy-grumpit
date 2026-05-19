@@ -62,7 +62,7 @@
         };
 
         combo_dqt {
-            key-positions = <3 4>;
+            key-positions = <5 4>;
             bindings = <&kp DE_DQT>;
             layers = <1>;
             timeout-ms = <25>;
@@ -77,37 +77,37 @@
 
         combo_osb {
             timeout-ms = <25>;
-            key-positions = <1 8>;
+            key-positions = <1 7>;
             bindings = <&kp DE_LEFT_BRACKET>;
         };
 
         combo_ocb {
             timeout-ms = <25>;
-            key-positions = <0 7>;
+            key-positions = <0 6>;
             bindings = <&kp DE_LEFT_BRACE>;
         };
 
         combo_opar {
             timeout-ms = <25>;
-            key-positions = <9 2>;
+            key-positions = <2 8>;
             bindings = <&kp DE_LPAR>;
         };
 
         combo_cpar {
             timeout-ms = <25>;
-            key-positions = <12 3>;
+            key-positions = <3 13>;
             bindings = <&kp DE_RPAR>;
         };
 
         combo_ccb {
             timeout-ms = <25>;
-            key-positions = <14 5>;
+            key-positions = <5 15>;
             bindings = <&kp DE_RIGHT_BRACE>;
         };
 
         combo_csb {
             timeout-ms = <25>;
-            key-positions = <13 4>;
+            key-positions = <4 14>;
             bindings = <&kp DE_RIGHT_BRACKET>;
         };
 
@@ -140,7 +140,7 @@
 
         combo_grave {
             bindings = <&kp DE_GRAVE>;
-            key-positions = <4 5>;
+            key-positions = <5 3>;
             timeout-ms = <25>;
             layers = <1>;
         };
@@ -152,14 +152,14 @@
 
         combo_lt {
             bindings = <&kp DE_LESS_THAN>;
-            key-positions = <7 17>;
+            key-positions = <9 0>;
             layers = <1>;
             timeout-ms = <25>;
         };
 
         combo_gt {
             bindings = <&kp DE_GT>;
-            key-positions = <9 19>;
+            key-positions = <12 5>;
             layers = <1>;
             timeout-ms = <25>;
         };
@@ -238,6 +238,16 @@
         combo_unlock {
             bindings = <&studio_unlock>;
             key-positions = <17 18 19>;
+        };
+
+        combo_under {
+            bindings = <&kp DE_UNDERSCORE>;
+            key-positions = <7 2>;
+        };
+
+        combo_minus {
+            bindings = <&kp DE_MINUS>;
+            key-positions = <3 14>;
         };
     };
 
