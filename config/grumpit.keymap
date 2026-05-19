@@ -238,11 +238,43 @@
         combo_under {
             bindings = <&kp DE_UNDER>;
             key-positions = <7 2>;
+            timeout-ms = <25>;
         };
 
         combo_minus {
             bindings = <&kp DE_MINUS>;
             key-positions = <3 14>;
+            timeout-ms = <25>;
+        };
+
+        combo_p {
+            bindings = <&kp DE_P>;
+            key-positions = <3 12>;
+            timeout-ms = <25>;
+        };
+
+        combo_y {
+            bindings = <&kp DE_Y>;
+            key-positions = <12 22>;
+            timeout-ms = <25>;
+        };
+
+        combo_k {
+            bindings = <&kp DE_K>;
+            key-positions = <2 9>;
+            timeout-ms = <25>;
+        };
+
+        combo_f {
+            bindings = <&kp DE_F>;
+            key-positions = <9 19>;
+            timeout-ms = <25>;
+        };
+
+        combo_j {
+            bindings = <&kp DE_J>;
+            key-positions = <0 7>;
+            timeout-ms = <25>;
         };
     };
 
