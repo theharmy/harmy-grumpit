@@ -76,12 +76,12 @@
         combo_osb {
             timeout-ms = <25>;
             key-positions = <1 7>;
-            bindings = <&mod_morph_lbrkt>;
+            bindings = <&kp DE_LEFT_BRACKET>;
         };
 
         combo_ocb {
             timeout-ms = <25>;
-            key-positions = <>;
+            key-positions = <6 0>;
             bindings = <&kp DE_LEFT_BRACE>;
         };
 
@@ -99,14 +99,14 @@
 
         combo_ccb {
             timeout-ms = <25>;
-            key-positions = <>;
+            key-positions = <15 5>;
             bindings = <&kp DE_RIGHT_BRACE>;
         };
 
         combo_csb {
             timeout-ms = <25>;
             key-positions = <4 14>;
-            bindings = <&mod_morph_rbrkt>;
+            bindings = <&kp DE_RBKT>;
         };
 
         combo_flsh {
