@@ -76,12 +76,12 @@
         combo_osb {
             timeout-ms = <25>;
             key-positions = <1 7>;
-            bindings = <&kp DE_LEFT_BRACKET>;
+            bindings = <&mod_morph_lbrkt>;
         };
 
         combo_ocb {
             timeout-ms = <25>;
-            key-positions = <16 7>;
+            key-positions = <>;
             bindings = <&kp DE_LEFT_BRACE>;
         };
 
@@ -99,33 +99,33 @@
 
         combo_ccb {
             timeout-ms = <25>;
-            key-positions = <14 25>;
+            key-positions = <>;
             bindings = <&kp DE_RIGHT_BRACE>;
         };
 
         combo_csb {
             timeout-ms = <25>;
             key-positions = <4 14>;
-            bindings = <&kp DE_RIGHT_BRACKET>;
+            bindings = <&mod_morph_rbrkt>;
         };
 
         combo_flsh {
             bindings = <&kp DE_SLASH>;
-            key-positions = <8 16>;
+            key-positions = <8 6>;
             layers = <0>;
             timeout-ms = <25>;
         };
 
         combo_bslsh {
             bindings = <&kp DE_BACKSLASH>;
-            key-positions = <13 25>;
+            key-positions = <13 15>;
             layers = <0>;
             timeout-ms = <25>;
         };
 
         combo_semi {
             bindings = <&kp DE_SEMI>;
-            key-positions = <25 5>;
+            key-positions = <14 24>;
             timeout-ms = <25>;
         };
 
@@ -306,6 +306,24 @@
             label = "HMR";
             hold-trigger-key-positions = <0 1 2 7 8 9 10 17 18 19 20 6 16>;
             hold-trigger-on-release;
+        };
+
+        mod_morph_lbrkt: mod_morph_lbrkt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_MORPH_LBRKT";
+            bindings = <&kp DE_LEFT_BRACKET>, <&kp DE_LEFT_BRACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mod_morph_rbrkt: mod_morph_rbrkt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_MORPH_RBRKT";
+            bindings = <&kp DE_RBKT>, <&kp DE_RBRC>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
     };
 
