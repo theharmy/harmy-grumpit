@@ -143,13 +143,13 @@
 
         combo_lt {
             bindings = <&kp DE_LESS_THAN>;
-            key-positions = <2 7>;
+            key-positions = <7 6>;
             timeout-ms = <25>;
         };
 
         combo_gt {
             bindings = <&kp DE_GT>;
-            key-positions = <3 14>;
+            key-positions = <14 15>;
             timeout-ms = <25>;
         };
 
@@ -234,13 +234,13 @@
 
         combo_under {
             bindings = <&kp DE_UNDER>;
-            key-positions = <16 9>;
+            key-positions = <9 6>;
             timeout-ms = <25>;
         };
 
         combo_minus {
             bindings = <&kp DE_MINUS>;
-            key-positions = <12 25>;
+            key-positions = <12 15>;
             timeout-ms = <25>;
         };
 
